@@ -9,3 +9,17 @@ function validateEmail(email) {
         return false; // Email is invalid
     }
 }
+
+// function to validate cellphone number
+
+function validateCellphone(cellphone) {
+    // Regular expression pattern for cellphone validation
+    const cellphonePattern = /^[0-9]{10}$/;
+
+    // Check if the cellphone matches the pattern
+    if (cellphonePattern.test(cellphone)) {
+        return true; // Cellphone is valid
+    } else {
+        return false; // Cellphone is invalid
+    }
+}
